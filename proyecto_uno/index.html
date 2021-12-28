@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../proyecto_uno/css/estilos.css">
+    <link rel="icon" href="./img_proyecto_uno/favicon.png">
+</head>
+
+<body>
+    <header class="container-fluid container-header ">
+        <nav class="navbar ">
+            <div class="marca">
+                <div class="mapamundi"></div>
+                <div><img src="../proyecto_uno/img_proyecto_uno/TA2.jpg" alt="animacion mundo"></div>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <div class="dropdown col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+
+                            <form class="px-2 py-2 login">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Contraseña">Contraseña</label>
+                                    <input type="Contraseña" class="form-control" id="Contraseña">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#"> <i class="fa fa-home" aria-hidden="true"></i>
+                        Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./destinos.html"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                        Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./reserva.html"><i class="fa fa-calendar" aria-hidden="true"></i>
+                        Reserva</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <main>
+        <section>
+            <div class="container-fluid">
+                <h1>Los mejores planes turisticos</h1>
+                <h2 class="ir">Conoce nuestras aventuras</h2>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="carouselpresentacion" class="carousel slide" data-ride="carousel" data-interval="2500">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselpresentacion" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="1"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="2"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="3"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="4"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="5"></li>
+                                <li data-target="#carouselpresentacion" data-slide-to="6"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img_proyecto_uno/cordilleraAndina.jpg" class="d-block w-100" alt="..."
+                                        width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Cordillera andina, Bolivia</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../proyecto_uno/img_proyecto_uno/69.jpg" class="d-block w-100" alt="..."
+                                        width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Laguna 69,Peru</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="../proyecto_uno/img_proyecto_uno/nevadoCocuy.jpg" class="d-block w-100"
+                                        alt="..." width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Nevado del cocuy, Colombia</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <img src="../proyecto_uno/img_proyecto_uno/cayo.jpg" class="d-block w-100" alt="..."
+                                        width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Cayo largo del sur, Cuba</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../proyecto_uno/img_proyecto_uno/tierra.jpg" class="d-block w-100"
+                                        alt="..." width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Paque nacional tierra del fuego, Argentina</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../proyecto_uno/img_proyecto_uno/islasFlotantes.jpg" class="d-block w-100"
+                                        alt="..." width="620px" height="400px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Isla flotante de los uros, Peru</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev " href="#carouselpresentacion" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselpresentacion" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- a donde te gustaria ir? -->
+        <section class="container">
+            <h2 class=" ir">A donde te gustaria ir?</h2>
+            <div class="continentes mt-1">
+                <div class="row">
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>AMERICA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/material/100/000000/llama.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Panama</a>
+                            <a class="dropdown-item" href="#">Ecuador</a>
+                            <a class="dropdown-item" href="#">Mexico</a>
+                            <a class="dropdown-item" href="#">Cuba</a>
+                            <a class="dropdown-item" href="#">Chile</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>EUROPA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/flag-of-europe.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">España</a>
+                            <a class="dropdown-item" href="#">Grecia</a>
+                            <a class="dropdown-item" href="#">Francia</a>
+                            <a class="dropdown-item" href="#">Italia</a>
+                            <a class="dropdown-item" href="#">Alemania</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>AFRICA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/elephant.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Benin</a>
+                            <a class="dropdown-item" href="#">Angola</a>
+                            <a class="dropdown-item" href="#">Cabo verde</a>
+                            <a class="dropdown-item" href="#">Egipto</a>
+                            <a class="dropdown-item" href="#">Zambia</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>Oceania</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/koala.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Australia</a>
+                            <a class="dropdown-item" href="#">Fiji</a>
+                            <a class="dropdown-item" href="#">Islas cook</a>
+                            <a class="dropdown-item" href="#">Nueva zelanda</a>
+                            <a class="dropdown-item" href="#">Islas marshall</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>ASIA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/beijing.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Turquia</a>
+                            <a class="dropdown-item" href="#">Jordania</a>
+                            <a class="dropdown-item" href="#">Israel</a>
+                            <a class="dropdown-item" href="#">China</a>
+                            <a class="dropdown-item" href="#">India</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>ARGENTINA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/tango.png" />
+                        </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Cordoba</a>
+                            <a class="dropdown-item" href="#">Puerto Madrid</a>
+                            <a class="dropdown-item" href="#">Rosario</a>
+                            <a class="dropdown-item" href="#">Neuquen</a>
+                            <a class="dropdown-item" href="#">Bariloche</a>
+                        </div>
+                    </div>
+
+                    <div class="dropright col-sm-6 col-md-4 col-lg-3">
+                        <button class="btn btn-primarydropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>USA</p>
+                            <img class="icons-contienentes"
+                                src="https://img.icons8.com/ios-filled/100/000000/statue-of-liberty.png" />
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Nueva york</a>
+                            <a class="dropdown-item" href="#">Chicago</a>
+                            <a class="dropdown-item" href="#">Texas</a>
+                            <a class="dropdown-item" href="#">San diego</a>
+                            <a class="dropdown-item" href="#">Los angeles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- promociones FINAL DE SECCION MAIN -->
+        <section class="container">
+            <h2 class="ir">Fantasticos paquetes en promocion para Agosto</h2>
+            <!-- *************************************destino1**************************************** -->
+            <div class="card-deck">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="promo" class="card my-2">
+                        <div class="card-body">
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe width="560" height="315"
+                                                    src="https://www.youtube.com/embed/y-11JqW5xsE" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a><img class="imagen-video" class="img-fluid z-depth-1" src="./img_proyecto_uno/huaca.jpg"
+                                    alt="video" data-toggle="modal" data-target="#modal1">
+                            </a>
+                            <h5 class="card-title">Huacachina -Peru</h5>
+                            <p class="card-text">Saliendo de Buenos Aires</p>
+                            <p>Desde $00.00</p>
+                            <a href="reserva.html">
+                                <button type="submit" class="btn btn-primary">Lo quiero</button>
+                            </a>
+                            <button type="submit" class="btn btn-primary">Plan de viaje</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- *************************************destino2**************************************** -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="promo" class="card my-2">
+
+                        <div class="card-body">
+                            <div class="modal fade" id="modal6" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe width="560" height="315"
+                                                    src="https://www.youtube.com/embed/8ldPxs3Ceqw" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a><img class="imagen-video" class="img-fluid z-depth-1" src="./img_proyecto_uno/salar.jpg"
+                                    alt="video" data-toggle="modal" data-target="#modal6">
+                            </a>
+                            <h5 class="card-title">Salar de Uyuni - Bolivia</h5>
+                            <p class="card-text">Saliendo de Buenos Aires</p>
+                            <p>Desde $00.00</p>
+                            <a href="reserva.html">
+                                <button type="submit" class="btn btn-primary">Lo quiero</button>
+                            </a>
+                            <button type="submit" class="btn btn-primary">Plan de viaje</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *************************************destino3**************************************** -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="promo" class="card my-2">
+
+                        <div class="card-body">
+                            <div class="modal fade" id="modal4" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe width="560" height="315"
+                                                    src="https://www.youtube.com/embed/HtTMqCAFeTM" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a><img class="imagen-video" class="img-fluid z-depth-1"
+                                    src="./img_proyecto_uno/ushuaia3.jpg" alt="video" data-toggle="modal"
+                                    data-target="#modal4">
+                            </a>
+                            <h5 class="card-title">Ushuaia -Argentina</h5>
+                            <p class="card-text">Saliendo de Buenos Aires</p>
+                            <p>Desde $00.00</p>
+                            <a href="reserva.html">
+                                <button type="submit" class="btn btn-primary">Lo quiero</button>
+                            </a>
+                            <button type="submit" class="btn btn-primary">Plan de viaje</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Nuestro blog -->
+    <section class="container">
+        <h3 class="ir">Nuestro blog</h3>
+
+        <div class="row">
+
+            <article class="col-sm-6 col-lg-4 mb-5">
+                <h5>Las 10 playas mas lindas del mundo</h5>
+                <p><i class="fa fa-user" aria-hidden="true"></i>
+                    Por Juan Diaz</p>
+                <a href="#"><img class="fotos-blog" src="./img_proyecto_uno/blog1.jpg" alt=""></a>
+            </article>
+
+            <article class="col-sm-6 col-lg-4 mb-5">
+                <h5>Tips para ahorrar cuando viajas</h5>
+                <p><i class="fa fa-user" aria-hidden="true"></i>
+                    Por Juan Diaz</p>
+                <a href="#"><img class="fotos-blog" src="./img_proyecto_uno/blog2.jpg" alt=""></a>
+            </article>
+
+            <article class="col-sm-6 col-lg-4 mb-5">
+                <h5> Para los amantes de la gastronomia</h5>
+                <p><i class="fa fa-user" aria-hidden="true"></i>
+                    Por Juan Diaz</p>
+                <a href="#"> <img class="fotos-blog" src="./img_proyecto_uno/blog3.jpg" alt=""></a>
+            </article>
+        </div>
+
+
+    </section>
+
+    <!-- suscribete -->
+    <section class="container">
+        <form>
+            <h4 class="ir">Suscribete <i class="fa fa-gift fa-2x" aria-hidden="true"></i></h4>
+            <small class="d-block pb-2">Te regalamos un 20% de descuento en tu primer paquete
+            </small>
+            <div class="row">
+                <div class="form-group col-sm-5 ">
+                    <label for="exampleInputEmail1"> <i class="fa fa-user" aria-hidden="true"></i>
+                        Nombre</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group col-sm-5 ">
+                    <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        Correo Electronico</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Tu email">
+                </div>
+                <div class="form-group col-sm-8 ">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid container-footer mt-5">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="item-footer">
+                        <h3 class="titulo-footer">Nosotros</h3>
+                        <ul>
+                            <li><a href="#">Mision</a></li>
+                            <li><a href="#">Historias</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="item-footer">
+                        <h3 class="titulo-footer">Siguenos</h3>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="item-footer">
+                        <h3 class="titulo-footer">Ubicanos</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.679806048572!2d-58.38735258543424!3d-34.612257380457315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccada38147a6d%3A0xd7cd028587620337!2sMoreno%201326%2C%20C1091%20ABB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1595629248508!5m2!1ses-419!2sar"
+                            width="200" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="item-footer "> Todos los derechos reservados © 2020</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

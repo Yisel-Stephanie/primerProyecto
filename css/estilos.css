@@ -1,0 +1,237 @@
+/* GENERALES */
+
+body {
+  font-family: "Ranchers", cursive;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(183, 222, 237, 1) 0%,
+    rgba(113, 206, 239, 1) 21%,
+    rgba(33, 180, 226, 1) 45%,
+    rgba(152, 213, 235, 1) 80%,
+    rgba(183, 222, 237, 1) 89%
+  );
+}
+nav li i {
+  color: rgb(10, 91, 241);
+}
+.login {
+  background-color: rgba(33, 180, 226, 1);
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+h3,
+h4 {
+  font-size: 23px;
+}
+
+/*HEADER animacion, logo y nav*/
+.mapamundi {
+  width: 100px;
+  height: 100px;
+  background: url("../img_proyecto_uno/mapamundi.jpg");
+  border-radius: 50%;
+  animation: rotacion 7s infinite;
+
+  box-shadow: 0px 0px 5px rgb(10, 91, 241);
+}
+@-webkit-keyframes rotacion {
+  100% {
+    background-position: -200px 0px;
+  }
+}
+@-moz-keyframes rotacion {
+  100% {
+    background-position: -200px 0px;
+  }
+}
+
+.container-header {
+  /* background-color;   */
+  color: blue;
+}
+
+.marca {
+  display: flex;
+}
+
+.icons-contienentes:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid blue;
+}
+
+/*A DONDE QUIERES IR?*/
+.continentes {
+  margin: 3%;
+}
+.ir {
+  display: inline-block;
+  border-bottom: 3px dotted black;
+  margin-top: 3%;
+}
+.ir:hover {
+  animation: 1s ir 1;
+}
+@keyframes ir {
+  30% {
+    transform: scaleX(1.5) scaleY(0.75);
+  }
+  50% {
+    transform: scaleX(0.75) scaleY(1.5);
+  }
+  100% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+/*SECCION PROMOS AGOSTO INDEX*/
+.promo {
+  /*ver*/
+}
+.card-body {
+  cursor: pointer;
+}
+.card-deck {
+  margin-inline-start: auto;
+}
+.imagen-video {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 3%;
+}
+
+/*Blog*/
+.fotos-blog {
+  max-width: 250px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.fotos-blog:hover {
+  transform: scale(1.1);
+}
+
+/*Footer*/
+.container-footer {
+  border-top: 0.1px dashed black;
+}
+
+.item-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+ul,
+li {
+  list-style: none;
+
+  font-size: large;
+}
+i {
+  padding: 0 1px 0 10px;
+}
+.titulo-footer {
+  margin-bottom: 5%;
+  font-weight: 600;
+  text-decoration: underline;
+}
+/* 
+****************hoja destinos ***** */
+/*giratorias*/
+.container-tarjeta {
+  /*violeta*/
+  height: 400px;
+  width: 500px;
+  -webkit-perspective: 1000;
+  padding: 0;
+  margin: 3%;
+}
+.tarjeta {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 2s;
+}
+.tarjeta:hover {
+  -webkit-transform: rotateY(180deg);
+}
+.lado {
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+
+.atras {
+  background-color: rgba(33, 180, 226, 1);
+  padding: 1%;
+  -webkit-transform: rotateY(180deg);
+}
+.tarjeta img:only-child {
+  width: 100%;
+  height: 100%;
+}
+.encabezado-promo {
+  display: inline;
+  background-color: violet;
+}
+/*****galeria destinos**/
+.card-galeria {
+  border: 1px solid black;
+  filter: drop-shadow(8px 8px 8px black);
+}
+.card-galeria:hover {
+  transform: scale(1.1);
+  border: 1px solid blue;
+  transition-timing-function: e;
+}
+
+/****testimoniales **/
+.carousel {
+  width: 100%;
+}
+.item {
+  min-height: 250px;
+  text-align: center;
+}
+.imagen-cara {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.imagen-cara img {
+  border-radius: 50%;
+}
+.opinion-cara {
+  margin: 2% auto;
+  width: 80%;
+}
+@media (max-width: 991px) {
+  .opinion-cara {
+    margin: 5% auto;
+    width: 80%;
+  }
+}
+
+.cabeza-compra {
+  background-color: rgb(152, 213, 235, 1);
+}
+.tarjetas-pago {
+  border: 2px solid blue;
+}
+
+/*aram tu paquete*/
+.formulario-armapaquete {
+  background-image: url("../img_proyecto_uno/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 700;
+}
